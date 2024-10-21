@@ -126,6 +126,7 @@ ul {
   grid-template-columns: minmax(500px, 3fr) 1fr;
   /* grid-template-rows: 1fr 1fr; */
   padding: 1rem;
+  gap: 1.5rem;
 }
 
 .projects {
@@ -139,11 +140,27 @@ ul {
   gap: 2rem;
 }
 
+.card {
+  display: flex;
+  flex-direction: column;
+  padding: 1.5rem;
+  border-radius: 10px;
+  /* border-left: 10px inset red; */
+}
+
+.card .actions {
+  display: flex;
+  gap: 1.5rem;
+  justify-content: end;
+  margin-top: auto;
+}
+
 .announcements-items {
   display: flex;
   flex-direction: column;
   padding: 1rem 2rem;
   gap: 1.5rem;
+  border: 3px solid red;
 }
 
 .announcement-item .description {
