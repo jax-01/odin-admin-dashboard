@@ -51,6 +51,7 @@ ul {
   --button-hover-color: #2563eb;
   --color-white: #ffffff;
   --color-black: #000000;
+  --color-gray: #e2e8f0;
 }
 
 .container {
@@ -83,7 +84,14 @@ ul {
 }
 
 .upper-header-search input {
-  flex: 1;
+  /* flex: 1; */
+  height: 2rem;
+  border: none;
+  padding: 1rem;
+  border-radius: 2.5rem;
+  color: var(--color-black);
+  background-color: var(--color-gray);
+  width: clamp(160px, 95%, 576px);
 }
 
 .upper-header-notification {
