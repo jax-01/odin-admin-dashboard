@@ -142,7 +142,7 @@ ul {
 .announcements-items {
   display: flex;
   flex-direction: column;
-  padding: 2rem;
+  padding: 1rem 2rem;
   gap: 1.5rem;
 }
 
@@ -153,4 +153,18 @@ ul {
   text-overflow: ellipsis;
   white-space: wrap;
   overflow: hidden;
+}
+
+.trending-items {
+  display: flex;
+  flex-direction: column;
+  padding: 1rem 2rem;
+  gap: 1rem;
+  border: 3px solid red;
+}
+
+.trending-item {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
 }
