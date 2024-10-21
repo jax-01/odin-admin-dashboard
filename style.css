@@ -36,6 +36,25 @@ ul {
 
 /* CSS reset rules above */
 
+:root {
+  --header-bg-color: #ffffff;
+  --sidebar-bg-color: #1e40af;
+  --maincontent-bg-color: #f1f5f9;
+  --content-text-color: #6b7280;
+  --shadow-color: #9ca3af;
+  --content-box-shadow: 2px 3px 4px var(--shadow-color);
+  --card-accent-color: #fbbf24;
+
+  --button-border-radius: 15px;
+  --card-border-radius: 10px;
+
+  --button-default-color: #1e3a8a;
+  --button-hover-color: #2563eb;
+
+  --color-white: #ffffff;
+  --color-black: #000000;
+}
+
 .container {
   display: grid;
   grid-template-columns: minmax(70px, 1fr) 4fr;
