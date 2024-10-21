@@ -76,6 +76,11 @@ ul {
   grid-template-columns: 4fr 2fr;
 }
 
+.upper-header svg {
+  fill: var(--color-black);
+  height: 1.8rem;
+}
+
 .upper-header-search {
   display: flex;
   justify-content: start;
@@ -96,8 +101,21 @@ ul {
 
 .upper-header-notification {
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
   align-items: center;
+  gap: 3rem;
+}
+
+.upper-header-notification img {
+  border-radius: 20px;
+  border: 3px solid var(--color-black);
+  height: 40px;
+  width: 40px;
+}
+
+.upper-header-notification p {
+  color: var(--color-black);
+  font-weight: 600;
 }
 
 .lower-header {
