@@ -138,3 +138,19 @@ ul {
   /* grid-auto-rows: minmax(260px, 1fr); */
   gap: 2rem;
 }
+
+.announcements-items {
+  display: flex;
+  flex-direction: column;
+  padding: 2rem;
+  gap: 1.5rem;
+}
+
+.announcement-item .description {
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  text-overflow: ellipsis;
+  white-space: wrap;
+  overflow: hidden;
+}
