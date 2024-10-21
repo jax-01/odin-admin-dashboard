@@ -1,0 +1,186 @@
+/*
+  Josh's Custom CSS Reset
+  https://www.joshwcomeau.com/css/custom-css-reset/
+*/
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+}
+
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+
+img, picture, video, canvas, svg {
+  display: block;
+  max-width: 100%;
+}
+
+input, button, textarea, select {
+  font: inherit;
+}
+
+p, h1, h2, h3, h4, h5, h6 {
+  overflow-wrap: break-word;
+}
+
+ul {
+  padding: 0;
+  margin: 0;
+}
+
+/* CSS reset rules above */
+
+.container {
+  display: grid;
+  grid-template-columns: minmax(70px, 1fr) 4fr;
+  grid-template-rows: minmax(190px, 1fr) auto;
+}
+
+/* header container*/
+
+.header {
+  grid-column: 2 / 3;
+  display: grid;
+  padding: 0.5rem 2rem 0.5rem 2rem;
+}
+
+.upper-header {
+  display: grid;
+  /* gap: 32px; */
+  grid-template-columns: 4fr 2fr;
+}
+
+.upper-header-search {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  gap: 16px;
+}
+
+.upper-header-search input {
+  flex: 1;
+}
+
+.upper-header-notification {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.lower-header {
+  display: grid;
+  grid-template-columns: 3fr 2fr;
+}
+
+.lower-header-profile {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  gap: 1rem;
+}
+
+.lower-header-buttons {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+/* sidebar container */
+
+.sidebar {
+  grid-row: 1 / 3;
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+}
+
+.sidebar-header {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.sidebar .first-list{
+  margin: 2rem 0;
+}
+
+.sidebar ul li {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+/* main-content container */
+
+.main-content {
+  grid-column: 2 / 3;
+  grid-row: 2 / 3;
+  border: 3px solid black;
+  display: grid;
+  grid-template-columns: minmax(500px, 3fr) 1fr;
+  /* grid-template-rows: 1fr 1fr; */
+  padding: 1rem;
+  gap: 1.5rem;
+}
+
+.projects {
+  grid-row: 1 / 3;
+}
+
+.projects-card-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(360px, 1fr));
+  /* grid-auto-rows: minmax(260px, 1fr); */
+  gap: 2rem;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  padding: 1.5rem;
+  border-radius: 10px;
+  /* border-left: 10px inset red; */
+}
+
+.card .actions {
+  display: flex;
+  gap: 1.5rem;
+  justify-content: end;
+  margin-top: auto;
+}
+
+.announcements-items {
+  display: flex;
+  flex-direction: column;
+  padding: 1rem 2rem;
+  gap: 1.5rem;
+}
+
+.announcement-item .description {
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  text-overflow: ellipsis;
+  white-space: wrap;
+  overflow: hidden;
+}
+
+.trending-items {
+  display: flex;
+  flex-direction: column;
+  padding: 1rem 2rem;
+  gap: 1rem;
+}
+
+.trending-item {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
