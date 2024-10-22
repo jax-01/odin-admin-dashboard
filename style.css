@@ -177,6 +177,10 @@ ul {
   background-color: var(--sidebar-bg-color);
 }
 
+.sidebar a {
+  text-decoration: none;
+}
+
 .sidebar-header {
   display: flex;
   flex-wrap: wrap;
