@@ -173,6 +173,8 @@ ul {
   display: flex;
   flex-direction: column;
   padding: 1rem;
+  color: var(--color-white);
+  background-color: var(--sidebar-bg-color);
 }
 
 .sidebar-header {
@@ -190,6 +192,14 @@ ul {
   gap: 1rem;
   flex-wrap: wrap;
   align-items: center;
+}
+
+.sidebar-header svg {
+  height: 4.5rem;
+}
+
+.first-list svg, .second-list svg {
+  height: 2.5rem;
 }
 
 /* main-content container */
