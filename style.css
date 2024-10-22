@@ -198,6 +198,10 @@ ul {
   align-items: center;
 }
 
+.sidebar svg {
+  fill: var(--color-white);
+}
+
 .sidebar-header svg {
   height: 4.5rem;
 }
