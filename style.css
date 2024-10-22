@@ -45,10 +45,10 @@ ul {
   --card-box-shadow: 2px 3px 4px var(--shadow-color);
   --header-box-shadow: 0 3px 6px 0 var(--shadow-color);
   --card-project-accent-color: #fbbf24;
-  --button-border-radius: 15px;
+  --button-border-radius: 16px;
   --card-border-radius: 10px;
-  --button-default-color: #1e3a8a;
-  --button-hover-color: #2563eb;
+  --button-default-color: #0ea5e9;
+  --button-hover-color: #1e3a8a;
   --color-white: #ffffff;
   --color-black: #000000;
   --color-gray: #e2e8f0;
@@ -103,7 +103,7 @@ ul {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 3rem;
+  gap: 2rem;
 }
 
 .upper-header-notification img {
@@ -128,12 +128,42 @@ ul {
   justify-content: start;
   align-items: center;
   gap: 1rem;
+  font-weight: 600;
+}
+
+.profile-pic img {
+  width: 100%;
+  max-width: 500px;
+}
+
+.lower-header-profile img {
+  border-radius: 40px;
+  border: 3px solid var(--color-black);
+  height: 80px;
+  width: 80px;
 }
 
 .lower-header-buttons {
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
   align-items: center;
+  gap: 2.5rem;
+}
+
+.lower-header-buttons button {
+  color: var(--color-white);
+  width: 100px;
+  font-weight: 600;
+  font-size: 1.2rem;
+  padding: 3px;
+  border: none;
+  border-radius: var(--button-border-radius);
+  background-color: var(--button-default-color);
+}
+
+.lower-header-buttons button:hover {
+  background: var(--button-hover-color);
+  cursor: pointer;
 }
 
 /* sidebar container */
