@@ -297,10 +297,23 @@ ul {
   flex-direction: column;
   padding: 1rem 2rem;
   gap: 1rem;
+  border-radius: 10px;
+  background-color: var(--color-white);
+  box-shadow: var(--card-box-shadow);
 }
 
 .trending-item {
   display: flex;
   gap: 1rem;
   align-items: center;
+}
+
+.trending-item .text p:first-child {
+  font-weight: 400;
+  font-size: 1rem;
+}
+
+.trending-item .text p:last-child {
+  color: var(--content-text-color);
+  font-size: 1.1rem;
 }
