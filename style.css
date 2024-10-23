@@ -245,6 +245,12 @@ ul {
   background-color: var(--maincontent-bg-color);
 }
 
+.main-content > div > h3 {
+  font-size: 1.3rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
 .projects {
   grid-row: 1 / 3;
 }
