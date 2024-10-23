@@ -109,7 +109,6 @@ ul {
 
 .upper-header-notification img {
   border-radius: 20px;
-  border: 3px solid var(--color-black);
   height: 40px;
   width: 40px;
 }
@@ -132,14 +131,15 @@ ul {
   font-weight: 600;
 }
 
-.profile-pic img {
+.profile-pic img, .trending-item img {
   width: 100%;
   max-width: 500px;
+  border: 3px solid var(--card-project-accent-color);
+
 }
 
 .lower-header-profile img {
   border-radius: 40px;
-  border: 3px solid var(--color-black);
   height: 80px;
   width: 80px;
 }
@@ -332,6 +332,13 @@ ul {
   display: flex;
   gap: 1rem;
   align-items: center;
+}
+
+.trending-item > a > img {
+  border-radius: 20px;
+  border: 3px solid var(--card-project-accent-color);
+  height: 40px;
+  width: 40px;
 }
 
 .trending-item .text p:first-child {
