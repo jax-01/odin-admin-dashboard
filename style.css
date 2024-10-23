@@ -278,6 +278,9 @@ ul {
   flex-direction: column;
   padding: 1rem 2rem;
   gap: 1.5rem;
+  border-radius: 10px;
+  background-color: var(--color-white);
+  box-shadow: var(--card-box-shadow);
 }
 
 .announcement-item .description {
