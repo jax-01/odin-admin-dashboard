@@ -305,6 +305,12 @@ ul {
   text-overflow: ellipsis;
   white-space: wrap;
   overflow: hidden;
+  color: var(--content-text-color);
+  font-size: 0.9rem;
+}
+
+.announcement-item .title {
+  font-size: 0.9rem;
 }
 
 .trending-items {
