@@ -331,10 +331,10 @@ ul {
 
 .trending-item .text p:first-child {
   font-weight: 400;
-  font-size: 1rem;
+  font-size: 0.9rem;
 }
 
 .trending-item .text p:last-child {
   color: var(--content-text-color);
-  font-size: 1.1rem;
+  font-size: 0.9rem;
 }
