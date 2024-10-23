@@ -58,7 +58,7 @@ ul {
   display: grid;
   grid-template-columns: minmax(70px, 1fr) 4fr;
   grid-template-rows: minmax(190px, 1fr) auto;
-  font-family: Roboto;
+  font-family: Roboto, sans-serif;
 }
 
 /* header container*/
@@ -237,12 +237,12 @@ ul {
 .main-content {
   grid-column: 2 / 3;
   grid-row: 2 / 3;
-  border: 3px solid black;
   display: grid;
   grid-template-columns: minmax(500px, 3fr) 1fr;
   /* grid-template-rows: 1fr 1fr; */
   padding: 1rem;
   gap: 1.5rem;
+  background-color: var(--maincontent-bg-color);
 }
 
 .projects {
@@ -252,8 +252,8 @@ ul {
 .projects-card-container {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(360px, 1fr));
-  /* grid-auto-rows: minmax(260px, 1fr); */
-  gap: 2rem;
+  grid-auto-rows: minmax(250px, 1fr);
+  gap: 1.5rem;
 }
 
 .card {
@@ -261,7 +261,9 @@ ul {
   flex-direction: column;
   padding: 1.5rem;
   border-radius: 10px;
-  /* border-left: 10px inset red; */
+  border-left: 10px solid var(--card-project-accent-color);
+  background-color: var(--color-white);
+  box-shadow: var(--card-box-shadow);
 }
 
 .card .actions {
